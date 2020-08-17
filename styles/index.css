@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #03b59a;
+}
