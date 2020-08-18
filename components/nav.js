@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Link from 'next/link'
 
 const links = [
@@ -7,30 +8,36 @@ const links = [
   'contact'
 ]
 
-const navLinks = links.map( (link, index) => (
-    <li key={index}>
-      <Link href={link}>
-        <a className="btn-blue no-underline uppercase">{link}</a>
-      </Link>
-    </li>
+const Nav = () => {
+  const [open, setOpen] = useState(false)
+
+  const navLinks = links.map( (link, index) => (
+    <Link href={link} key={index}>
+      <a className="block text-white font-semibold uppercase rounded hover:bg-gray-600 px-2 mt-1">{link}</a>
+    </Link>
   ))
 
-export default function Nav() {
   return (
-    <nav className="bg-gray-400">
-      <ul className="flex justify-between items-center p-6 font-semibold">
-        <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline uppercase">Jose Jimenez Jr.</a>
-          </Link>
-        </li>
-        <ul className="flex justify-between items-center space-x-4">
-          {navLinks}
-        </ul>
-        {/* <ul className="flex flex-col items-center space-x-4">
-          {navLinks}
-        </ul> */}
-      </ul>
+    <nav className="bg-gray-700">
+      <div className=" flex items-center justify-between px-4 py-3">
+        <div>
+          <p className="text-white font-semibold uppercase tracking-wide">Jose Jimenez Jr.</p>
+        </div>
+        <div>
+          <button type="button" onClick={() => setOpen(!open)} className=" block text-gray-400 hover:text-white focus:text-white focus:outline-none">
+            <svg className="h-6 w-6 fill-current" viewBox="0 0 100 80">
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class={`${open ? 'block' : 'hidden'}px-2 pt-2 pb-4`}>
+        {navLinks}
+      </div>
     </nav>
   )
 }
+
+export default Nav()
