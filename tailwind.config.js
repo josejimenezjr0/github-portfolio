@@ -1,7 +1,11 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'header': "url('/img/header.jpg')",
+      })
+    },
   },
   variants: {},
   plugins: [],
