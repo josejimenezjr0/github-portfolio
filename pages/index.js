@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Portfolio from '../components/PortfolioCard'
+import Portfolio from './portfolio'
+import About from './about'
+
 
 const links = [
   'about',
@@ -8,20 +10,6 @@ const links = [
   'portfolio',
   'contact'
 ]
-
-const portfolioInfo = {
-  portfolio: {
-    imageURL: 'img/portfolio/fosterpet.jpg',
-    imageAlt: 'place holder text for image',
-    beds: 3,
-    baths: 2,
-    title: "fosterPET",
-    priceInCents: 190000,
-    formattedPrice: "$1,900.00",
-    reviewCount: 34,
-    rating: 4
-  }
-}
 
 const Home = () => {
   const [open, setOpen] = useState(false)
@@ -42,8 +30,6 @@ const Home = () => {
       <a className="block text-white font-semibold uppercase rounded hover:bg-gray-600 px-2 mt-1 sm:mt-0 sm:ml-1">{link}</a>
     </Link>
   ))
-
-
 
   return (
     <div className="antialiased text-gray-900">
@@ -71,12 +57,8 @@ const Home = () => {
         <hr className="mx-auto"/>
         <p className="text-lg tracking-wide my-3 font-medium">Web Developer</p>
       </div>
-      {/* <div className="bg-gray-300 min-h-screen p-8 flex items-center justify-center"> */}
-      <div className="bg-gray-300 p-8 flex flex-wrap items-center justify-center">
-        <Portfolio details={portfolioInfo}/>
-        <Portfolio details={portfolioInfo}/>
-        <Portfolio details={portfolioInfo}/>
-      </div>
+      <About />
+      <Portfolio />
     </div>
   )
 }
