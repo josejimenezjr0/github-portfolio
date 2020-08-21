@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Portfolio from './portfolio'
 import About from './about'
+import Skills from './skills'
+import Contact from './contact'
 
 
 const links = [
@@ -62,7 +64,9 @@ const Home = () => {
         <p className="text-lg tracking-wide my-3 font-medium">Web Developer</p>
       </div>
       <About />
+      <Skills />
       <Portfolio />
+      <Contact />
     </div>
   )
 }
