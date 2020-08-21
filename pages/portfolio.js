@@ -42,7 +42,7 @@ const Portfolio = () => {
   ))
 
   return (
-    <div className="bg-gray-300 p-8 flex flex-wrap items-center justify-center">
+    <div id="portfolio" className="bg-gray-300 p-8 flex flex-wrap items-center justify-center">
       { portfolios }
     </div>
   )

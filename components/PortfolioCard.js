@@ -2,11 +2,11 @@ const PortfolioCard = props => {
   const portfolio = props.details
 
   return (
-    <div className="p-3 py-5">
+    <div className="p-3 py-5 w-auto">
       <div className="relative pb-5/6">
         <img className="absolute h-full w-full object-cover rounded-lg shadow-md" src={ portfolio.imageURL } alt={ portfolio.imageAlt }/>
       </div>
-      <div className="relative px-4 -mt-16">
+      <div className="relative px-4 -mt-16 w-84">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <div className="flex items-baseline">
             <span className="inline-block bg-teal-200 text-teal-700 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">New</span>
