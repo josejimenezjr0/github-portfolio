@@ -1,3 +1,10 @@
+const links = [
+  'about',
+  'skills',
+  'portfolio',
+  'contact'
+]
+
 const portfolioInfo = [
   {
     imageURL: 'img/portfolio/fosterpet.jpg',
@@ -101,5 +108,6 @@ export {
   portfolioInfo,
   skillList,
   aboutText,
-  contactInfo
+  contactInfo,
+  links
 }
