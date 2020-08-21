@@ -2,7 +2,7 @@ import { skillList } from '../staticInfo'
 
 const Skills = () => {
   const listSkills = skillList.map( (skill, ind) => (
-    <div className="p-4">
+    <div className="p-4" key={ind}>
       <div className="h-20 w-20 mx-auto">
         { skill.original }
       </div>

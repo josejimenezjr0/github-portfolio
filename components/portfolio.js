@@ -1,4 +1,4 @@
-import PortfolioCard from '../components/PortfolioCard'
+import PortfolioCard from './PortfolioCard'
 import { portfolioInfo } from '../staticInfo'
 
 const Portfolio = () => {

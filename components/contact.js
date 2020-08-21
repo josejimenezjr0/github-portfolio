@@ -3,7 +3,7 @@ import { contactInfo } from '../staticInfo'
 const Contact = () => {
 
   const contacts = contactInfo.map( (contact, ind) => (
-    <div className="p-4">
+    <div className="p-4" key={ind}>
       <div className="h-12 w-12 mx-auto">
         { contact.icon }
       </div>
