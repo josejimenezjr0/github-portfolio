@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { links } from './staticInfo'
+
+const links = [
+  'about',
+  'skills',
+  'portfolio',
+  'contact'
+]
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
