@@ -1,4 +1,4 @@
-import { aboutText } from '../../public/staticInfo'
+import { aboutText } from '../staticInfo'
 
 const About = () => (
   <div id="about" className="bg-teal-500 p-8 flex flex-wrap items-center justify-center">
