@@ -1,4 +1,4 @@
-import { skillList } from '../public/staticInfo'
+import { skillList } from '../../public/staticInfo'
 
 const Skills = () => {
   const large = skillList.large.map( (skill, ind) => (
