@@ -1,5 +1,5 @@
 import PortfolioCard from './PortfolioCard'
-import { portfolioInfo } from '../staticInfo'
+import { portfolioInfo } from '../public/staticInfo'
 
 const Portfolio = () => {
 

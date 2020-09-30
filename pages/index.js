@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Portfolio from '../components/Portfolio'
 import About from '../components/About'
+import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
