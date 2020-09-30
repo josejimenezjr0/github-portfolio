@@ -1,4 +1,4 @@
-const PortfolioCard = ({ project }) => {
+const PortfolioCard = ({ project = {} }) => {
   const skills = project.skills || []
     const skillList = skills.map( (skill, ind) => (
     <div className="p-2" key={ind}>
