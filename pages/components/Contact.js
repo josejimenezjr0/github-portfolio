@@ -1,4 +1,4 @@
-import { contactInfo } from '../staticInfo'
+import { contactInfo } from './staticInfo'
 
 const Contact = () => {
 
