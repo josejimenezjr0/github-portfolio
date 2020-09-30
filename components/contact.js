@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="h-12 w-12 mx-auto">
         { contact.icon }
       </div>
-      <div className="pt-2 text-center font-bold truncate">
+      <div className="pt-2 text-center text-teal-500 font-bold truncate">
         { contact.link ? <a href={ contact.link }>{ contact.text }</a> : contact.text }
       </div>
     </div>

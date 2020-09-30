@@ -3,8 +3,8 @@ import { portfolioInfo } from '../staticInfo'
 
 const Portfolio = () => {
 
-  const portfolios = portfolioInfo.map( (portfolio, ind) => (
-    <PortfolioCard details={ portfolio } key={ind}/>
+  const portfolios = portfolioInfo.map( (project, ind) => (
+    <PortfolioCard project={ project } key={ind}/>
   ))
 
   return (

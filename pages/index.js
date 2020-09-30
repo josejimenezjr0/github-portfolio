@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Portfolio from '../components/Portfolio'
 import About from '../components/About'
