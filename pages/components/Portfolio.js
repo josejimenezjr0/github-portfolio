@@ -74,8 +74,8 @@ const portfolioInfo = [
   },
   {
     imageURL: 'img/portfolio/taskstodo.jpg',
-    imageAlt: 'Tasks/ToDo - In Progress',
-    title: "Tasks/ToDo - In Progress",
+    imageAlt: 'Tasks/ToDo',
+    title: "Tasks/ToDo",
     skills: tasksTodoSkills,
     link: 'https://github.com/josejimenezjr0/tasks-todo'
   },
