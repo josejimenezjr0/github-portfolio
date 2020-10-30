@@ -77,7 +77,7 @@ const portfolioInfo = [
     imageAlt: 'Tasks/ToDo',
     title: "Tasks/ToDo",
     skills: tasksTodoSkills,
-    link: 'https://github.com/josejimenezjr0/tasks-todo'
+    link: 'https://github.com/josejimenezjr0/tasks-todo-2'
   },
   {
     imageURL: 'img/portfolio/portfoliopage.png',
