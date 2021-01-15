@@ -70,7 +70,7 @@ const portfolioInfo = [
     imageAlt: 'incan gold',
     title: "Incan Gold",
     skills: incanGoldSkills,
-    link: 'https://github.com/josejimenezjr0/incan_gold_server'
+    link: 'https://github.com/josejimenezjr0/incangold_v2'
   },
   {
     imageURL: 'img/portfolio/taskstodo.jpg',
